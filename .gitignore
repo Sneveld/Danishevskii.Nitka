@@ -3,11 +3,11 @@
 Danishevskii.Nitka.DataAccess/obj/
 Danishevskii.Nitka.DataContext/obj/
 Danishevskii.Nitka.Entity/obj/
-Danishevskii.Nitka.Model/bin/
-Danishevskii.Nitka.Tests/bin/
-Danishevskii.Nitka.Dto/bin/
-Danishevskii.Nitka.Mapping/bin/
-Danishevskii.Nitka.Web/bin/
+Danishevskii.Nitka.Model/obj/
+Danishevskii.Nitka.Tests/obj/
+Danishevskii.Nitka.Dto/obj/
+Danishevskii.Nitka.Mapping/obj/
+Danishevskii.Nitka.Web/obj/
 
 Danishevskii.Nitka.DataAccess/bin/
 Danishevskii.Nitka.DataContext/bin/
