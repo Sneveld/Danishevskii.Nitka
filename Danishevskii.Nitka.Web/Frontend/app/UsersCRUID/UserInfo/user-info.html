@@ -1,0 +1,49 @@
+﻿<div class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-2">First Name</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="user.firstName" class="form-control" #firstName="ngModel" required>
+            <div [hidden]="firstName.valid || firstName.untouched" class="alert alert-danger">
+                Validation Error
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Last Name</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="user.lastName" class="form-control" #lastName="ngModel" required>
+            <div [hidden]="lastName.valid || lastName.untouched" class="alert alert-danger">
+                Validation Error
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Number</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="user.number" class="form-control" #number="ngModel" required pattern="[0-9]{10}">
+            <div [hidden]="number.valid || number.untouched" class="alert alert-danger">
+                Validation Error
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">Salary</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="user.salary" class="form-control" #salary="ngModel" required>
+            <div [hidden]="salary.valid || salary.untouched" class="alert alert-danger">
+                Validation Error
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">SalaryRatio</label>
+        <div class="col-md-10">
+            <input [(ngModel)]="user.salaryRatio" class="form-control" #salary="ngModel" [readonly]="true">            
+        </div>
+    </div>
+    <button [disabled]="firstName.invalid || lastName.invalid || number.invalid || salary.invalid"
+            class="btn btn-default" (click)="save()">
+        Save
+    </button>
+</div>

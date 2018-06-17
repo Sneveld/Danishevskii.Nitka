@@ -1,0 +1,24 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <user-list [users]="users" (selectUserEvent) = "selectUser($event)" (userWasDeletedEvent)="deleteUser($event)">
+
+                </user-list>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-md-offset-4 col-centered">
+                    <button class="btn" (click)="previosPage()">Previos</button>
+                </div>
+                <div class="col-md-3 col-centered">
+                    <button class="btn" (click)="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <user-info [user]="currentUser"></user-info>
+        </div>
+    </div>
+   
+
+</div>

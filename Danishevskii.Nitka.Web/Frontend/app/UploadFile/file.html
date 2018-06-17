@@ -1,0 +1,11 @@
+﻿<div>
+    <div class="fileinput fileinput-new" data-provides="fileinput">
+        <span class="btn btn-default btn-file"><span>Choose file</span><input type="file" (change)="upload($event.target.files)"/></span>
+        <span class="fileinput-filename"></span>
+    </div>
+</div>
+<div *ngIf="loading">
+    <h3>LOADING</h3>
+</div>
+
+

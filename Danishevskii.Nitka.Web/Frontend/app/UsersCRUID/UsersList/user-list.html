@@ -1,0 +1,15 @@
+﻿<div>
+    <ul>
+        <li class="list-group-item" *ngFor="let user of users" (click)="selectUser(user)">
+            <div class="row">
+                <div class="col-md-10">
+                    {{user.firstName}}
+                </div>
+                <div class="col-md-2">
+                    <button class="btn-danger" (click)="deleteUser(user)">Del</button>
+                </div>               
+            </div>
+            
+        </li>
+    </ul>
+</div>
